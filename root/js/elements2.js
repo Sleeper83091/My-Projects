@@ -9,12 +9,15 @@ var movies = [
 var movieList = document.createElement("ul");
 movieList.setAttribute("id", "movieList");
 document.body.appendChild(movieList);
+var button = document.getElementById("alert");
 
 
 for(var i =0; i < movies.length; i++){
+	debugger;
 	var movie = movies[i];
 	movieObj = new Movie(movie[0], movie[1], movie[2]);
 	e("li", movieObj.title);
+	
 }
 
 function Movie(name, time, year){
@@ -25,9 +28,17 @@ function Movie(name, time, year){
 
 
 function e(elementType, text){
+	debugger;
 	var newE = document.createElement(elementType);
 	newE.textContent = text;
+	newE.addEventListener("click", function () {
+    	alert(text);
+	});
 	movieList.appendChild(newE);
 	
 }
+  
 
+
+
+    

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie List</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	
+<div class="container">
+	<form name="newMovieForm" id="newMovieForm">
+  	<h3>Movie Title</h3>
+    <input type="text" name="movieTitle" id="movieTitle" />
+    <h3>Run Time (in mins.)</h3>
+    <input type="text" name="runTime" id="runTime" />
+    <h3>Release Year</h3>
+    <input type="text" name="year" id="year" />
+    <h3>Description</h3>
+    <input type="text" name="desc" id="desc" />
+    <div id="genre">
+    	<h3>Genre:</h3>
+        <input type="radio" name="genre" value="comedy" /> comedy<br />
+        <input type="radio" name="genre" value="drama" /> drama<br />
+        <input type="radio" name="genre" value="horror" /> horror
+    </div><br>
+    <input id="btn" type="submit" value="Add Movie" />
+  </form>
+  <div class="paperList">
+  	<ul id="list"></ul>
+  </div>
+</div>
+	<script type="text/javascript" src="js/movies.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+	background-color: #607D8B;
+	height: 800;
+	width: 800;
+}
+.container{
+	margin: 0 auto;
+	background-color: #FFECB3;
+	height: 100%;
+	width: 40%;
+	padding: 15px;
+	border: 2px solid #000;
+	text-align: center;
+}
+.paperList{
+	background-image: url(../img/note.jpg);
+	background-size: cover;
+	height: 200px;
+	width: 100%;
+	margin: 0 auto;
+}
+#list{
+	padding: 10px 20px;
+	line-height: 2.4;
+}
